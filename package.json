@@ -1,0 +1,15 @@
+{
+  "name": "bc",
+  "version": "1.0.0",
+  "description": "monorepo for bicycle",
+  "private": true,
+  "scripts": {
+    "format": "prettier --write \"apps/**/*.{ts,tsx,js,jsx,json,md}\""
+  },
+  "keywords": [],
+  "packageManager": "pnpm@10.25.0",
+  "devDependencies": {
+    "prettier": "^3.7.4",
+    "typescript": "^5.9.3"
+  }
+}
