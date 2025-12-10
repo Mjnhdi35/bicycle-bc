@@ -30,5 +30,9 @@ export class UpdateUserDto {
     @IsOptional()
     @IsString()
     totalRewards?: string;
+
+    @IsOptional()
+    @IsInt()
+    createdAtBlock?: number;
 }
 

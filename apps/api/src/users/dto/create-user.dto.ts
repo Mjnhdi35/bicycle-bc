@@ -1,4 +1,4 @@
-import { IsString, IsOptional, MaxLength, MinLength } from 'class-validator';
+import { IsString, IsOptional, MaxLength, MinLength, IsInt, IsNumberString } from 'class-validator';
 
 export class CreateUserDto {
     @IsString()
@@ -18,5 +18,25 @@ export class CreateUserDto {
     @IsString()
     @MaxLength(256)
     bio?: string;
+
+    @IsOptional()
+    @IsInt()
+    totalRaces?: number;
+
+    @IsOptional()
+    @IsInt()
+    wins?: number;
+
+    @IsOptional()
+    @IsNumberString()
+    totalDistance?: string;
+
+    @IsOptional()
+    @IsString()
+    totalRewards?: string;
+
+    @IsOptional()
+    @IsInt()
+    createdAtBlock?: number;
 }
 
