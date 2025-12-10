@@ -168,3 +168,13 @@ impl pallet_simple_counter::Config for Runtime {
     type RuntimeEvent = RuntimeEvent;
     type WeightInfo = pallet_simple_counter::weights::SubstrateWeight<Runtime>;
 }
+
+/// Configure the user-profile pallet.
+/// This pallet adds profile metadata on top of AccountId from frame_system.
+/// Accounts are automatically created by frame_system on first transaction.
+impl pallet_user_profile::Config for Runtime {
+    type RuntimeEvent = RuntimeEvent;
+    type WeightInfo = pallet_user_profile::weights::SubstrateWeight<Runtime>;
+    type MaxUsernameLength = frame_support::traits::ConstU32<32>;
+    type MaxBioLength = frame_support::traits::ConstU32<256>;
+}

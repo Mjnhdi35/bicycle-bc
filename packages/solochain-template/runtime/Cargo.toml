@@ -26,8 +26,9 @@ pallet-aura.workspace = true
 pallet-balances.workspace = true
 pallet-grandpa.workspace = true
 pallet-sudo.workspace = true
-# pallet-simple-counter.workspace = true
-# pallet-template.workspace = true
+pallet-simple-counter.workspace = true
+pallet-template.workspace = true
+pallet-user-profile.workspace = true
 pallet-timestamp.workspace = true
 pallet-transaction-payment-rpc-runtime-api.workspace = true
 pallet-transaction-payment.workspace = true
@@ -66,9 +67,10 @@ std = [
 	"pallet-aura/std",
 	"pallet-balances/std",
 	"pallet-grandpa/std",
-	# "pallet-simple-counter/std",
+	"pallet-simple-counter/std",
 	"pallet-sudo/std",
-	# "pallet-template/std",
+	"pallet-template/std",
+	"pallet-user-profile/std",
 	"pallet-timestamp/std",
 	"pallet-transaction-payment-rpc-runtime-api/std",
 	"pallet-transaction-payment/std",
@@ -98,11 +100,12 @@ runtime-benchmarks = [
 	"frame-system/runtime-benchmarks",
 	"pallet-balances/runtime-benchmarks",
 	"pallet-grandpa/runtime-benchmarks",
-	# "pallet-simple-counter/runtime-benchmarks",
+	"pallet-simple-counter/runtime-benchmarks",
 	"pallet-sudo/runtime-benchmarks",
-	# "pallet-template/runtime-benchmarks",
+	"pallet-template/runtime-benchmarks",
 	"pallet-timestamp/runtime-benchmarks",
 	"pallet-transaction-payment/runtime-benchmarks",
+	"pallet-user-profile/runtime-benchmarks",
 	"sp-runtime/runtime-benchmarks",
 ]
 
@@ -114,11 +117,12 @@ try-runtime = [
 	"pallet-aura/try-runtime",
 	"pallet-balances/try-runtime",
 	"pallet-grandpa/try-runtime",
-	# "pallet-simple-counter/try-runtime",
+	"pallet-simple-counter/try-runtime",
 	"pallet-sudo/try-runtime",
-	# "pallet-template/try-runtime",
+	"pallet-template/try-runtime",
 	"pallet-timestamp/try-runtime",
 	"pallet-transaction-payment/try-runtime",
+	"pallet-user-profile/try-runtime",
 	"sp-runtime/try-runtime",
 ]
 

@@ -232,4 +232,8 @@ mod runtime {
     // Simple counter pallet for smoke testing.
     #[runtime::pallet_index(8)]
     pub type SimpleCounter = pallet_simple_counter;
+
+    // User Profile pallet - adds profile metadata on top of frame_system accounts.
+    #[runtime::pallet_index(9)]
+    pub type UserProfile = pallet_user_profile;
 }
